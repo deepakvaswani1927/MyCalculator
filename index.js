@@ -5,12 +5,8 @@ for (item of buttons) {
     item.addEventListener('click', (e) => {
         buttonText = e.target.innerText;
         console.log('Button text is ', buttonText);
-        if (buttonText == 'X') {
-            buttonText = '*';
-            screenValue += buttonText;
-            screen.value = screenValue;
-        }
-        else if (buttonText == 'Clr') {
+        
+         if (buttonText == 'Clr') {
             screenValue = "";
             screen.value = screenValue;
         }
@@ -24,4 +20,6 @@ for (item of buttons) {
 
     })
 }
+
+
 
